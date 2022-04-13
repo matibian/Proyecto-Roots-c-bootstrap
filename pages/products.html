@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/84e9df15ed.js" crossorigin="anonymous"></script>
@@ -31,13 +35,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/about_us.html">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../pages/services.html">Services</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="../pages/products.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                            </a>
+                            <a class="nav-link  dropdown-toggle" href="../pages/products.html"  data-hover="dropdown" > Products  </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Honey</a></li>
                                 <li><a class="dropdown-item" href="#">Olive Oil</a></li>
@@ -50,21 +50,21 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="../pages/services.html">Services</a>
+                        </li>
+                        
+                        <li class="nav-item">
                             <a class="nav-link" href="../pages/contacts.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <select class="selectpicker" data-width="fit">
+                        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                        <option  data-content='<span class="flag-icon flag-icon-tw"></span> 中⽂'>中⽂</option>
+                    </select>
                 
                 </div>
             </div>
         </nav>
-
-
-
-
 
 
         <!-- <a href="../index.html">
@@ -100,31 +100,324 @@
         </div> -->
 
     </header>
+    <div>
+        <img src="../assets/farm3.jpeg" alt="exports" id="aboutpage__pic">
+    </div>
+    <div>
+        <h1 class="productos__titulo">Products</h1>
 
+    </div>
 
+    <nav>
+		<div class="row" id="rowindex">
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/honey250.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Liquid Honey Squeeze x 250 grs</a></h3>
 
-    <section class="productpage">
-        <img src="../assets/farm.jpeg" alt="farm" id="productpage__pic">
-        <h1 class="productpage__titulo">Products</h1>
-        <UL class="productpage__products">
-            <li class="productpage__honey">Honey
-            <img src="../assets/honeyProd.jpeg" alt="honey"></li>
-            <li class="productpage__honey">Olive Oil
-            <img src="../assets/oliveoilprod.jpeg" alt="oliveoil"></li>
-            <li class="productpage__honey">Cheese
-            <img src="../assets/cheeseprod.jpeg" alt="cheese"></li>
-            <li class="productpage__honey">Chandler nut
-            <img src="../assets/nutprod.jpeg" alt="chandlernut"></li>
-            <li class="productpage__honey">Garlic
-            <img src="../assets/garlic.jpeg" alt="garilc"></li>
-            <li class="productpage__honey">Peanut
-            <img src="../assets/peanutprod.jpeg" alt="peanut"></li>
-            <li class="productpage__honey">Beans
-            <img src="../assets/beansprod.jpeg" alt="beans"></li>
-            <li class="productpage__honey">Dry fruit
-            <img src="../assets/dry.jpeg" alt="dryfruits"></li>
-        </UL>
-    </section>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/bidon.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Honey Liquid x 2.27 kgs</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/winnie.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Liquid Honey WP x 330gr</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/untable500.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Honey Spreadable x 500grs</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/sqeeze250.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Liquid Honey Squeeze x 250 grs</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/liquidax5001.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Liquid Honey x 500 grs</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="../assets/products/mielera500.png">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">Liquid Honey x 500 grs</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/dryB.jpg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">DRY FRUIT</a></h3>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="rowindex">
+			<div class="col-md-3 col-sm-6">
+				<div class="product-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/honey.jpeg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">HONEY</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/oliveOil.jpg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">OLIVE OIL</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/cheese.jpg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">CHEESE</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/nutB.jpg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">CHANDLER NUT</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/garlic.jpeg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">GARLIC</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/peanutprod.jpeg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">PEANUT</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/beansprod.jpg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">BEANS</a></h3>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<div class="productpage-grid">
+					<div class="product-image">
+						<a href="#" class="image">
+							<img class="pic-1" src="./assets/dryB.jpg">
+						</a>
+						<ul class="product-links">
+							<li><a href="#"><i class="far fa-heart"></i></a></li>
+							<li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+							<li><a href="#"><i class="fa fa-eye"></i></a></li>
+							<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+						</ul>
+					</div>
+					<div class="product-content">
+						<h3 class="title"><a href="#">DRY FRUIT</a></h3>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
 
 
 
@@ -152,5 +445,7 @@
             
         </div>  
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>

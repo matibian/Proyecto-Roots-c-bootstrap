@@ -35,13 +35,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/about_us.html">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/services.html">Services</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./pages/products.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Products
-                            </a>
+                            <a class="nav-link  dropdown-toggle" href="./pages/products.html"  data-hover="dropdown" > Products  </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Honey</a></li>
                                 <li><a class="dropdown-item" href="#">Olive Oil</a></li>
@@ -54,13 +50,17 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="./pages/services.html">Services</a>
+                        </li>
+                        
+                        <li class="nav-item">
                             <a class="nav-link" href="./pages/contacts.html">Contact</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <select class="selectpicker" data-width="fit">
+                        <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                        <option  data-content='<span class="flag-icon flag-icon-tw"></span> 中⽂'>中⽂</option>
+                    </select>
                 
                 </div>
             </div>
@@ -140,7 +140,7 @@
     <section class="productos">
         <h1 class="productos__titulo">Products</h1>
         <nav>
-            <div class="row">
+            <div class="row" id="rowindex">
                 <div class="col-md-3 col-sm-6">
                     <div class="product-grid">
                         <div class="product-image">
