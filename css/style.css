@@ -22,103 +22,25 @@ body {
     height: 80px;
     z-index: 2;
 }
-/* 
-.menu__productos {
-    display: flex;
-    justify-content: end;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
 }
 
-
-.menu ul {
-
-    margin:0;
-    padding:0;
-    list-style:none;
+.dropdown-item {
+    color: #4D3C41;
 }
 
-.menu ul li {
-    background-color:#e8e4e4;
+.dropdown-item:hover {
+    color: #4D3C41;
+    background-color: #8AA254;
 }
 
-.menu ul a {
-    color:#4D3C41;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-    font-family:garamond bold, Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    top: 50%;
-
-}   
-
-.menu ul li {
-    float:left;
-    margin:0;
-    padding:0;
-    align-items: center;
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0,0,0,.7);
+    background-color: #8AA254;
 }
-
-.menu ul li:hover {
-    background:#8AA254;
-}
-
-.menu ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:#eee;
-    padding:0;
-    border: solid;
-}
-
-
-.menu ul ul li {
-    float:none;
-    width:200px
-}
-
-.menu ul ul a {
-    line-height:120%;
-    padding:10px 15px;
-}
-
-
-.menu ul li:hover ul {
-    display:block;
-}
-
-.menu__idiomas {
-    list-style:none;
-    grid-area: idioma;
-    justify-self: center;
-    border-left: solid;
-    border-left-color: #4D3C41;
-}
-
-.menu__idiomas:hover {
-    background:#8AA254;
-}
-
-.menu__ham {
-    display:none;
-}
-
-.menu__idiomas a {
-
-    color:#4D3C41;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-    font-family:garamond bold, Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    top: 50%;
-    
-} */
 
 .container-footer {
     display: flex;
@@ -156,11 +78,12 @@ body {
 }
 
 .social ul li {
-    width: 72px;
-    height: 69px;
-    line-height: 75px;
+    width: 55px;
+    height: 55px;
+    line-height: 64px;
     margin: 0 10px;
     text-align: center;
+    align-items: center;
     cursor: pointer;
     border-radius: 31%;
     border: 3px solid #4D3C41;
@@ -170,7 +93,7 @@ body {
 
 .social ul li .fa {
     color: #4D3C41;
-    margin-top: 2vh;
+    margin-top: 1vh;
     transition: all 0.5s ease;
 }
 
@@ -332,6 +255,12 @@ body {
     height: 35vh;
     object-fit: cover;
     
+}
+
+.navprod {
+    background-image: url(../assets/logoprod.svg);
+    background-size: cover;
+    background-position: 0vh -49vh;
 }
 
 
@@ -595,12 +524,7 @@ body {
 
 }
 
-/* .container-products{
-    width: 1000px;
-    position: relative;
-    justify-content: space-between;
-    margin: 15px auto;
-} */
+
 .carousel {
     width: cover;
     height: 60vh;
