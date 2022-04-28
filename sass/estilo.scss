@@ -1,6 +1,28 @@
 @import "colores";
 
 
+					/* MAPA */
+$estilos: (
+	color: #000000,
+	border-style: solid,
+	padding: 5%,
+	border-color: fff,
+	tFuente: 35px,
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2),
+);
+
+					/* MIXIN */
+
+@mixin bordes {
+	border : solid, $marronprin 3px;
+	box-shadow : 1px 1px 1px 1px $marronprin;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	
+}
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -205,6 +227,9 @@ body {
 	background-size: cover;
 	background-position: 0vh -49vh;
 }
+
+							/*ABOUT US*/
+
 .aboutus {
 	background-color: $marronfondo;
 	color: $marronprin;
@@ -219,49 +244,63 @@ body {
 	width: 100%;
 	height: 40vh;
 	object-fit: cover;
+	margin-top: 77px;
 }
-.container__misvis {
-	display: grid;
-	grid-template-areas: "mision mision vision vision" "values values values values" "commit quality integrity teamwork";
-	margin: 5vh;
-	justify-content: space-between;
-	article {
-		padding: 3%;
-		center {
-			justify-content: center;
-			font-weight: bolder;
-			padding: 3%;
-		}
+
+.misionvision {
+		padding-top: map-get($estilos, padding);
+		box-shadow: map-get($estilos, box-shadow);
+}
+
+
+.col {
+	color : $marronprin;
+	.vision {
+		padding: map-get($estilos, padding);
+
+	}
+	.mision {
+
+	}
+
+}
+
+#table {
+	@include bordes()
+}
+
+#values {
+	.col {
+		@include bordes()
 	}
 }
-.mision {
-	grid-area: mision;
-}
-.vision {
-	grid-area: vision;
-}
-.values {
-	grid-area: values;
-	justify-self: center;
-	font-weight: bolder;
-}
-.commit {
-	grid-area: commit;
-}
-.quality {
-	grid-area: quality;
-}
-.integrity {
-	grid-area: integrity;
-}
-.teamwork {
-	grid-area: teamwork;
-}
+
+
+					/* SERVICES PAGE*/
+
 #services__pic {
 	width: 100%;
 	height: 40vh;
 	object-fit: cover;
 }
+
+#research {
+	@extend .misionvision
+}
+
+#monitor {
+	@extend .misionvision
+}
+
+#export {
+	@extend .misionvision
+}
+
+#inspection {
+	@extend .misionvision
+}
+
+
 .productpage-grid {
 	background-color: #fff;
 	text-align: center;

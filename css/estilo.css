@@ -1,3 +1,5 @@
+/* MAPA */
+/* MIXIN */
 * {
   margin: 0;
   padding: 0;
@@ -263,6 +265,7 @@ body {
   background-position: 0vh -49vh;
 }
 
+/*ABOUT US*/
 .aboutus {
   background-color: #e8e4e4;
   color: #4D3C41;
@@ -281,78 +284,40 @@ body {
   height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-top: 77px;
 }
 
-.container__misvis {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "mision mision vision vision" "values values values values" "commit quality integrity teamwork";
-  margin: 5vh;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.misionvision, #research, #monitor, #export, #inspection {
+  padding-top: 5%;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.container__misvis article {
-  padding: 3%;
+.col {
+  color: #4D3C41;
 }
 
-.container__misvis article center {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bolder;
-  padding: 3%;
+.col .vision {
+  padding: 5%;
 }
 
-.mision {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: mision;
+#table {
+  border: solid, #4D3C41 3px;
+  -webkit-box-shadow: 1px 1px 1px 1px #4D3C41;
+          box-shadow: 1px 1px 1px 1px #4D3C41;
+  border-radius: 5px;
+  margin-bottom: 1em;
 }
 
-.vision {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 2;
-  grid-area: vision;
+#values .col {
+  border: solid, #4D3C41 3px;
+  -webkit-box-shadow: 1px 1px 1px 1px #4D3C41;
+          box-shadow: 1px 1px 1px 1px #4D3C41;
+  border-radius: 5px;
+  margin-bottom: 1em;
 }
 
-.values {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: values;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  font-weight: bolder;
-}
-
-.commit {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: commit;
-}
-
-.quality {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: quality;
-}
-
-.integrity {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: integrity;
-}
-
-.teamwork {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
-  grid-area: teamwork;
-}
-
+/* SERVICES PAGE*/
 #services__pic {
   width: 100%;
   height: 40vh;
