@@ -226,15 +226,46 @@ body {
 	background-image: url(../assets/logoprod.svg);
 	background-size: cover;
 	background-position: 0vh -49vh;
+	.productpage-grid {
+		box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+		
+	}
 }
 
-							/*ABOUT US*/
+							/*ABOUT US PAGE*/
 
 .aboutus {
 	background-color: $marronfondo;
 	color: $marronprin;
+	background-color: #e8e4e4;
+	color: #4D3C41;
+	background-image: url("../assets/logoprod.svg");
+	background-size: cover;
+	background-position: 0vh -49vh;
 	h1 {
+		font-size: 50px;
+		padding: 3% 0;
 		text-align: center;
+	}
+	
+	.container {
+		padding-bottom: 10vh;
+		h3{
+			font-size: 50px;
+			text-align: center;
+			padding: 3% 0% 1% 0%;
+			font-weight: bolder;
+		}
+		.text {
+			font-size: 20px;
+			column-count: 1;
+			
+			@media screen and (min-width: 700px) {
+				column-count: 2;
+				column-rule-style: solid;
+				column-rule-width: 1px;
+			  }
+		}
 	}
 }
 .aboutus__art {
@@ -247,26 +278,36 @@ body {
 	margin-top: 77px;
 }
 
-.misionvision {
-		padding-top: map-get($estilos, padding);
-		box-shadow: map-get($estilos, box-shadow);
+#misvis {
+		font-size: 30px;
+		display: flex;
+		align-items: center;
+		background-image: url( '../assets/logomarron.svg' );
+		background-size: cover;
+		background-position: 0vh -73vh;
+		background-color: $marronprin;
+		color: $marronfondo ; 
+		padding: 3% 0 1% 0;
+		font-size: 20px;
+		column-rule-style: solid;
+		column-rule-width: 1px;
+		center {
+			font-weight: bolder;
+			font-size: 30px;
+			padding: 3% 0;
+		}
+		p {
+			padding: 3%;
+		}
 }
 
 
-.col {
-	color : $marronprin;
-	.vision {
-		padding: map-get($estilos, padding);
 
-	}
-	.mision {
 
-	}
-
-}
-
-#table {
-	@include bordes()
+#val {
+	font-size: 50px;
+	padding: 3% 0;
+	color: $marronprin;
 }
 
 #values {
@@ -285,19 +326,23 @@ body {
 }
 
 #research {
-	@extend .misionvision
+	padding-top: map-get($estilos, padding);
+	box-shadow: map-get($estilos, box-shadow);
 }
 
 #monitor {
-	@extend .misionvision
+	padding-top: map-get($estilos, padding);
+	box-shadow: map-get($estilos, box-shadow);
 }
 
 #export {
-	@extend .misionvision
+	padding-top: map-get($estilos, padding);
+	box-shadow: map-get($estilos, box-shadow);
 }
 
 #inspection {
-	@extend .misionvision
+	padding-top: map-get($estilos, padding);
+	box-shadow: map-get($estilos, box-shadow);
 }
 
 
@@ -492,6 +537,7 @@ body {
 		position: relative;
 		z-index: 1;
 		transition: all 0.3s ease 0s;
+		
 	}
 	.title {
 		color: $marronprin;
@@ -536,6 +582,7 @@ body {
 }
 #rowindex {
 	padding: 0vh 10vh 15vh 10vh;
+
 }
 .navbar-expand-lg {
 	.navbar-collapse {

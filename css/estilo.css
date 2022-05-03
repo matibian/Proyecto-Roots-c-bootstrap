@@ -265,14 +265,54 @@ body {
   background-position: 0vh -49vh;
 }
 
-/*ABOUT US*/
+.navprod .productpage-grid {
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/*ABOUT US PAGE*/
 .aboutus {
   background-color: #e8e4e4;
   color: #4D3C41;
+  background-color: #e8e4e4;
+  color: #4D3C41;
+  background-image: url("../assets/logoprod.svg");
+  background-size: cover;
+  background-position: 0vh -49vh;
 }
 
 .aboutus h1 {
+  font-size: 50px;
+  padding: 3% 0;
   text-align: center;
+}
+
+.aboutus .container {
+  padding-bottom: 10vh;
+}
+
+.aboutus .container h3 {
+  font-size: 50px;
+  text-align: center;
+  padding: 3% 0% 1% 0%;
+  font-weight: bolder;
+}
+
+.aboutus .container .text {
+  font-size: 20px;
+  -webkit-column-count: 1;
+          column-count: 1;
+}
+
+@media screen and (min-width: 700px) {
+  .aboutus .container .text {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-rule-style: solid;
+            column-rule-style: solid;
+    -webkit-column-rule-width: 1px;
+            column-rule-width: 1px;
+  }
 }
 
 .aboutus__art {
@@ -287,26 +327,41 @@ body {
   margin-top: 77px;
 }
 
-.misionvision, #research, #monitor, #export, #inspection {
-  padding-top: 5%;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+#misvis {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../assets/logomarron.svg");
+  background-size: cover;
+  background-position: 0vh -73vh;
+  background-color: #4D3C41;
+  color: #e8e4e4;
+  padding: 3% 0 1% 0;
+  font-size: 20px;
+  -webkit-column-rule-style: solid;
+          column-rule-style: solid;
+  -webkit-column-rule-width: 1px;
+          column-rule-width: 1px;
 }
 
-.col {
+#misvis center {
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 3% 0;
+}
+
+#misvis p {
+  padding: 3%;
+}
+
+#val {
+  font-size: 50px;
+  padding: 3% 0;
   color: #4D3C41;
-}
-
-.col .vision {
-  padding: 5%;
-}
-
-#table {
-  border: solid, #4D3C41 3px;
-  -webkit-box-shadow: 1px 1px 1px 1px #4D3C41;
-          box-shadow: 1px 1px 1px 1px #4D3C41;
-  border-radius: 5px;
-  margin-bottom: 1em;
 }
 
 #values .col {
@@ -323,6 +378,30 @@ body {
   height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#research {
+  padding-top: 5%;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#monitor {
+  padding-top: 5%;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#export {
+  padding-top: 5%;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#inspection {
+  padding-top: 5%;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .productpage-grid {
