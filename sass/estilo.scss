@@ -323,29 +323,45 @@ body {
 	width: 100%;
 	height: 40vh;
 	object-fit: cover;
+	margin-top: 77px;
 }
 
-#research {
-	padding-top: map-get($estilos, padding);
-	box-shadow: map-get($estilos, box-shadow);
-}
-
-#monitor {
-	padding-top: map-get($estilos, padding);
-	box-shadow: map-get($estilos, box-shadow);
-}
-
-#export {
-	padding-top: map-get($estilos, padding);
-	box-shadow: map-get($estilos, box-shadow);
-}
-
-#inspection {
-	padding-top: map-get($estilos, padding);
-	box-shadow: map-get($estilos, box-shadow);
+#services {
+	@extend .aboutus;
+	.card {
+		img{
+			padding: 3vh;
+		}
+		background-color: $marronfondo ;
+		opacity: 0.6;
+		color: $marronprin;
+		.card-title{
+			font-weight: bolder;
+		}
+	}
 }
 
 
+
+#services__titulo{
+	font-size: 50px;
+	padding: 3%;
+	text-align: center;
+    color: $marronprin;
+    font-weight: bolder;
+
+}
+
+#servicescards {
+	.card {
+		@include bordes()
+	}
+}
+
+
+
+
+					/* PRODUCT PAGE*/
 .productpage-grid {
 	background-color: #fff;
 	text-align: center;
@@ -461,12 +477,15 @@ body {
 	column-gap: 10vh;
 }
 .carousel {
-	width: cover;
 	height: 60vh;
+	@media screen and (max-width: 700) {
+		height: cover;
+		margin-top: 77px;
+	}
 }
 .carousel-inner {
-	width: fill;
 	height: 60vh;
+	width: cover;
 }
 .product-grid {
 	background-color: #fff;
@@ -631,6 +650,13 @@ body {
 
 
 @media screen and (max-width:780px) {
+	.carousel-inner {
+		height: fit-content;
+	}
+	.carousel{
+		height: fit-content;
+	}
+
 	.menu {
 		display: none;
 	}
@@ -670,9 +696,7 @@ body {
 		background-size: cover;
 		background-position: 0vh -23vh;
 	}
-    // .carousel-inner {
-    //     width: 175%;
-    // }
+
 }
 @media screen and (max-width:990px) {
 	.product-grid {
